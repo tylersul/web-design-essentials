@@ -1,0 +1,24 @@
+/* Hover Pseudoclass */
+h1:hover {
+    background-color: pink;
+}
+
+/* Hover Psuedoclass: triggers when element receives focus */
+input:focus {
+    background-color: teal;
+}
+
+button:focus {
+    border-radius: 10px;
+    background-color: #2ecc71;
+}
+
+/* Active Pseudoclass:  Immediate state (think mid-click or tap) */
+button:active {
+    background-color: orange;
+    font-size: 2em;
+}
+
+p:active {
+    color: yellow;
+}

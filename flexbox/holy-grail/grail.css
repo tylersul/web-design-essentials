@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main > *, header, footer {
+    margin: 4px;
+    padding: 5px;
+    border-radius: 7px;
+}
+header {
+    display: flex;                      /* Add flexbox to header container */
+    justify-content: space-between;     /* Separate links and push them to each side */
+    align-items: center;                /* Vertically align items in center of container */
+    background: blue;
+    flex-basis: 100px;                  /* Height in a column */
+}
+
+main {
+    display: flex;
+    min-height: 800px;
+}
+
+article {
+    flex-basis: 60%;
+    background: red;
+    flex-grow: 3;
+}
+
+nav {
+    flex-basis: 20%;
+    background: orange;
+    order: -1;                  /* First in order of Nav container */
+    flex-grow: 1;
+}
+
+aside {
+    flex-basis: 20%;
+    background: yellow;
+    flex-grow: 1;
+}
+
+footer {
+    background: blue;
+    flex-basis: 100px;  /* Height in a column */
+}
+
+@media all and (max-width: 640px) {
+    main {
+        flex-direction: column;
+        flex-grow: 1;               /* Use all available vertical space on mobile view */
+    }
+
+    nav {
+        order: 0;
+    }
+}

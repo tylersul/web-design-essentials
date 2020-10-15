@@ -1,0 +1,23 @@
+.container {
+    display: flex;      /* Add flexbox to container */
+    flex-wrap: wrap;    /* Confine content to container */
+}
+
+.box {
+    background-color: #cc0042;
+    flex-grow: 2;                 /* Shrink at quicker rate when screen size reduces */
+    flex-basis: 500px;              /* Defines the optimum item size before going into container */
+    color: white;
+    font-family: Helvetica;
+    padding: 20px;
+    transition: 0.2s background-color;
+}
+
+.box:hover {
+    background: #ff0052;
+}
+
+.middle {
+    background-color: #b20039;
+    flex-grow: 1;                 /* Shrink at slower rate when screen size reduces */
+}

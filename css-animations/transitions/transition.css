@@ -1,0 +1,42 @@
+/* Best Practices for Transitions */
+/* Stick to translate, scale, rotate, or opacity transitions */
+
+.box {
+    background: #9b59b6;
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+}
+
+.box:hover {
+    background: #e74c3c;
+    transform-origin: top left;
+    transform: scale(2);
+    opacity: 0.5;
+}
+
+.animated {
+    transition-property: background-color; /* Applies the transition only to the background color */
+    transition-duration: 1s;
+}
+
+.box-delay {
+    transition-property: background-color, border-radius;
+    transition-duration: 5s, 1s;
+    transition-delay: 1s, 0.5s;
+}
+
+.transition {
+    transform: translateX(300px);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.transition-shorthand {
+    transition: transform 1.5s ease-in;
+}

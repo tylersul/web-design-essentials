@@ -1,0 +1,25 @@
+.container {
+    margin: 4em;
+    text-align: center;
+}
+
+.loader {
+    border: 16px solid #bdc3c7;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    border-top-color: #1abc9c;
+    border-bottom-color: #3498db;
+    border-radius: 50%;                     /* Shape as a circle */ 
+    animation: load 2s linear infinite;
+}
+
+/* Rotate circle completely */
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
